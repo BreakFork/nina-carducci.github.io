@@ -107,7 +107,15 @@
 		<section id="about">
 
 			<div class="picture left" role="figure">
-				<img src="./assets/images/nina.webp" alt="La photographe Nina Carducci en forêt" aria-describedby="ariaDescriptionNina">    
+				<img 
+				sizes="(max-width: 740px) 100w, 740px"
+				srcset="
+				./assets/images/nina_w_320.webp 320w,
+				./assets/images/nina_w_640.webp 640w,
+				./assets/images/nina_w_768.webp 768w"
+				src="./assets/images/nina.webp" 
+				alt="La photographe Nina Carducci en forêt" 
+				aria-describedby="ariaDescriptionNina">    
 			</div>
 
 			<div id="about-me">
@@ -223,7 +231,15 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img loading="lazy" src="./assets/images/camera.webp" alt="Image d'un appareil photo de marque Leica">
+				<img 
+				loading="lazy" 
+				sizes="(max-width: 768px) 100w, 768px"
+				srcset="
+				./assets/images/camera_w_320.webp 320px,
+				./assets/images/camera_w_640.webp 640px,
+				./assets/images/camera_w_768.webp 768px"
+				src="./assets/images/camera.webp" 
+				alt="Image d'un appareil photo de marque Leica">
 			</div>
 		</div>
 	</footer>
